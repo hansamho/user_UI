@@ -362,7 +362,7 @@
 			<div class="row">
 				<div class="col-lg-8 add_bottom_15">
 					<div class="form_title">
-						<h3><strong>1</strong>Your Details</h3>
+						<h3><strong>1</strong>예약자 정보</h3>
 						<p>
 							Mussum ipsum cacilds, vidis litro abertis.
 						</p>
@@ -371,44 +371,33 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>First name</label>
-									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking">
+									<label>성</label>
+									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="홍">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Last name</label>
-									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Email</label>
-									<input type="email" id="email_booking" name="email_booking" class="form-control">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Confirm email</label>
-									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control">
+									<label>이름</label>
+									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking" placeholder="길동">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Telephone</label>
-									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control">
+									<label>전화번호</label>
+									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" placeholder="010-1234-5678"> 
 								</div>
+							</div>
+							<div class="col-4 gy-4">
+								<button type="submit" id="Authentication" class="btn btn-secondary">인증번호 전송</button>
 							</div>
 						</div>
 					</div>
 					<!--End step -->
 
 					<div class="form_title">
-						<h3><strong>2</strong>Payment Information</h3>
+						<h3><strong>2</strong>결제 정보</h3>
 						<p>
 							Mussum ipsum cacilds, vidis litro abertis.
 						</p>
@@ -421,7 +410,7 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-12">
 								<div class="form-group">
-									<label>Card number</label>
+									<label>카드 번호</label>
 									<input type="text" id="card_number" name="card_number" class="form-control">
 								</div>
 							</div>
@@ -431,7 +420,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<label>Expiration date</label>
+								<label>카드 유효기간</label>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
@@ -447,7 +436,7 @@
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Security code</label>
+									<label>CCV 번호</label>
 									<div class="row">
 										<div class="col-4">
 											<div class="form-group">
@@ -475,76 +464,18 @@
 					</div>
 					<!--End step -->
 
-					<div class="form_title">
-						<h3><strong>3</strong>Billing Address</h3>
-						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
-						</p>
-					</div>
-					<div class="step">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Country</label>
-									 <div class="styled-select-common">
-                                        <select name="country" id="country">
-                                            <option value="" selected>Select your country</option>
-                                            <option value="Europe">Europe</option>
-                                            <option value="United states">United states</option>
-                                            <option value="Asia">Asia</option>
-                                        </select>
-                                    </div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Street line 1</label>
-									<input type="text" id="street_1" name="street_1" class="form-control">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Street line 2</label>
-									<input type="text" id="street_2" name="street_2" class="form-control">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-12">
-								<div class="form-group">
-									<label>City</label>
-									<input type="text" id="city_booking" name="city_booking" class="form-control">
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="form-group">
-									<label>State</label>
-									<input type="text" id="state_booking" name="state_booking" class="form-control">
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="form-group">
-									<label>Postal code</label>
-									<input type="text" id="postal_code" name="postal_code" class="form-control">
-								</div>
-							</div>
-						</div>
-						<!--End row -->
-					</div>
-					<!--End step -->
+		
 
 					<div id="policy">
 						<h4>Cancellation policy</h4>
 						<div class="form-group">
                             <label class="container_check">
-                                I accept terms and conditions and general policy.
+                                결제에 동의 하시겠습니까?
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-						<a href="confirmation_hotel.html" class="btn_1 green medium">Book now</a>
+						<a href="confirmation_hotel.html" class="btn_1 green medium">예약</a>
 					</div>
 				</div>
 
@@ -555,7 +486,7 @@
 							<tbody>
 								<tr>
 									<td>
-										Check in
+										체크인
 									</td>
 									<td class="text-end">
 										10 April 2015
@@ -563,7 +494,7 @@
 								</tr>
 								<tr>
 									<td>
-										Check out
+										체크아웃
 									</td>
 									<td class="text-end">
 										12 April 2015
@@ -571,15 +502,16 @@
 								</tr>
 								<tr>
 									<td>
-										Rooms
+										객실
 									</td>
 									<td class="text-end">
 										1 double room
 									</td>
 								</tr>
+								
 								<tr>
 									<td>
-										Nights
+										성인
 									</td>
 									<td class="text-end">
 										2
@@ -587,31 +519,16 @@
 								</tr>
 								<tr>
 									<td>
-										Adults
-									</td>
-									<td class="text-end">
-										2
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Children
+										아이
 									</td>
 									<td class="text-end">
 										0
 									</td>
 								</tr>
-								<tr>
-									<td>
-										Welcome bottle
-									</td>
-									<td class="text-end">
-										$34
-									</td>
-								</tr>
+								
 								<tr class="total">
 									<td>
-										Total cost
+										총 가격
 									</td>
 									<td class="text-end">
 										$154
@@ -619,7 +536,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<a class="btn_full" href="confirmation_hotel.html">Book now</a>
+						<a class="btn_full" href="confirmation_hotel.html">예약</a>
 						<a class="btn_full_outline" href="single_hotel.html"><i class="icon-right"></i> Modify your search</a>
 					</div>
 					<div class="box_style_4">

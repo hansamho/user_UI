@@ -52,8 +52,8 @@
                     <div class="col-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
                     <div class="col-6">
                         <ul id="top_links">
-                            <li><a href="#sign-in-dialog" id="access_link">Sign in</a></li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
+                            <li><a href="#sign-in-dialog" id="access_link">로그인</a></li>
+                            <li><a href="wishlist.html" id="wishlist_link">찜 목록</a></li>
                             <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
                         </ul>
                     </div>
@@ -302,122 +302,93 @@
         </div><!-- container -->
     </header><!-- End Header -->
 	
-	<main>
-		<div id="carousel-home">
-            <div class="owl-carousel owl-theme">
-                 <div class="owl-slide cover" style="background-image: url(img/slides/slide_home_3.jpg);">
-                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-                        <div class="container">
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="col-lg-12 static">
-                                    <div class="slide-text text-center white">
-                                        <h2 class="owl-slide-animated owl-slide-title">Going Inside<br>The Louvre Museum</h2>
-                                        <p class="owl-slide-animated owl-slide-subtitle">
-                                            Discover hidden wonders on trips curated by Citytours Tours Experts
-                                        </p>
-                                        <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="all_tours_list.html" role="button">Read more</a></div>
+	<!--메인 예약 확인-->
+		<section id="search_container">
+            <div id="search">
+                <ul class="nav nav-tabs">
+                    
+                    <li><a href="#hotels" data-bs-toggle="tab" class="active show">숙소</a></li>
+                    
+                </ul>
+    
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="hotels"> 
+                    <!-- End rab -->
+                    <div class="tab-pane" id="hotels">
+                        <h3>숙소검색</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><i class="icon-calendar-7"></i> 체크인</label>
+                                    <input class="date-pick form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label><i class="icon-calendar-7"></i> 체크아웃</label>
+                                    <input class="date-pick form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6">
+                                <div class="form-group">
+                                    <label>성인</label>
+                                    <div class="numbers-row">
+                                        <input type="text" value="1" id="adults" class="qty2 form-control" name="adults_2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6">
+                                <div class="form-group">
+                                    <label>아이</label>
+                                    <div class="numbers-row">
+                                        <input type="text" value="0" id="children" class="qty2 form-control" name="children_2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-12">
+                                <div class="form-group">
+                                    <label>객실</label>
+                                    <div class="numbers-row">
+                                        <input type="text" value="1" id="children" class="qty2 form-control" name="rooms">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--/owl-slide-->
-                <div class="owl-slide cover" style="background-image: url(img/slides/slide_home_2.jpg);">
-                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.6)">
-                        <div class="container">
-                            <div class="row justify-content-center justify-content-md-end">
-                                <div class="col-lg-6 static">
-                                    <div class="slide-text text-end white">
-                                        <h2 class="owl-slide-animated owl-slide-title">Discover<br>Vatican Museum</h2>
-                                        <p class="owl-slide-animated owl-slide-subtitle">
-                                            Discover hidden wonders on trips curated by Citytours Tours Experts
-                                        </p>
-                                        <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="all_tours_list.html" role="button">Read more</a></div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>호텔 이름</label>
+                                    <input type="text" class="form-control" id="hotel_name" name="hotel_name" placeholder="Optionally type hotel name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>지역</label>
+                                    <div class="styled-select-common">
+                                        <select name="area">
+                                            <option value="Centre" selected>Centre</option>
+                                            <option value="Gar du Nord Station">Gar du Nord Station</option>
+                                            <option value="La Defance">La Defance</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- End row -->
+                        <hr>
+                        <button class="btn_1 green"><i class="icon-search"></i>검색</button>
                     </div>
-                </div>
-                <!--/owl-slide-->
-                <div class="owl-slide cover" style="background-image: url(img/slides/slide_home_1.jpg);">
-                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-                        <div class="container">
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="col-lg-6 static">
-                                    <div class="slide-text white">
-                                        <h2 class="owl-slide-animated owl-slide-title">Love Paris<br>Arch de Triomphe</h2>
-                                        <p class="owl-slide-animated owl-slide-subtitle">
-                                            Discover hidden wonders on trips curated by Citytours Tours Experts
-                                        </p>
-                                        <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="all_tours_list.html" role="button">Read more</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <!--/owl-slide-->
-            </div>
-            <div id="icon_drag_mobile"></div>
-        </div>
-        <!--/carousel-->
-
-        <div class="white_bg">
-        <div class="container margin_60">
-            <div class="row small-gutters categories_grid">
-                <div class="col-sm-12 col-md-6">
-                    <a href="all_tours_list.html">
-                        <img src="img/img_cat_home_1.jpg" alt="" class="img-fluid">
-                        <div class="wrapper">
-                            <h2>Special Offers</h2>
-                            <p>1150 Locations</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="row small-gutters mt-md-0 mt-sm-2">
-                        <div class="col-sm-6">
-                            <a href="all_tours_list.html">
-                                <img src="img/img_cat_home_2.jpg" alt="" class="img-fluid">
-                                <div class="wrapper">
-                                    <h2>Tours</h2>
-                                    <p>800 Locations</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="all_hotels_list.html">
-                                <img src="img/img_cat_home_3.jpg" alt="" class="img-fluid">
-                                <div class="wrapper">
-                                    <h2>Hotels</h2>
-                                    <p>650 Locations</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 mt-sm-2">
-                            <a href="all_restaurants_list.html">
-                                <img src="img/img_cat_home_4.jpg" alt="" class="img-fluid">
-                                <div class="wrapper">
-                                    <h2>Restaurants</h2>
-                                    <p>1132 Locations</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-            <!--/categories_grid-->
-        </div>
-        <!-- /container -->
-        </div>
-        <!-- /white_bg -->
-
+        </section>
+        <main>
 		<div class="container margin_60">
 
 			<div class="main_title">
-				<h2>Paris <span>Top</span> Tours</h2>
+				<h2>국내 <span>인기</span> 여행지</h2>
 				<p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
 			</div>
 
@@ -426,7 +397,7 @@
                     <div class="tour_container">
                         <div class="ribbon_3 popular"><span>Popular</span></div>
                         <div class="img_container">
-                            <a href="single_tour.html">
+                            <a href="all_hotels_list.html">
                                 <img src="img/tour_box_1.jpg" width="800" height="533" class="img-fluid" alt="image">
                                 <div class="short_info">
                                     <i class="icon_set_1_icon-44"></i>Historic Buildings<span class="price"><sup>$</sup>39</span>
@@ -452,7 +423,7 @@
                     <div class="tour_container">
                         <div class="ribbon_3 popular"><span>Popular</span></div>
                         <div class="img_container">
-                            <a href="single_tour.html">
+                            <a href="all_hotels_list.html">
                                 <img src="img/tour_box_2.jpg" width="800" height="533" class="img-fluid" alt="image">
                                 <div class="short_info">
                                     <i class="icon_set_1_icon-43"></i>Churches<span class="price"><sup>$</sup>45</span>
@@ -478,7 +449,7 @@
                     <div class="tour_container">
                         <div class="ribbon_3 popular"><span>Popular</span></div>
                         <div class="img_container">
-                            <a href="single_tour.html">
+                            <a href="all_hotels_list.html">
                                 <img src="img/tour_box_3.jpg" width="800" height="533" class="img-fluid" alt="image">
                                 <div class="badge_save">Save<strong>30%</strong></div>
                                 <div class="short_info">
@@ -505,7 +476,7 @@
                     <div class="tour_container">
                         <div class="ribbon_3"><span>Top rated</span></div>
                         <div class="img_container">
-                            <a href="single_tour.html">
+                            <a href="all_hotels_list.html">
                                 <img src="img/tour_box_4.jpg" width="800" height="533" class="img-fluid" alt="image">
                                 <div class="badge_save">Save<strong>20%</strong></div>
                                 <div class="short_info">
@@ -532,7 +503,7 @@
                     <div class="tour_container">
                         <div class="ribbon_3"><span>Top rated</span></div>
                         <div class="img_container">
-                            <a href="single_tour.html">
+                            <a href="all_hotels_list.html">
                                 <img src="img/tour_box_14.jpg" width="800" height="533" class="img-fluid" alt="image">
                                 <div class="short_info">
                                     <i class="icon_set_1_icon-28"></i>Skyline tours<span class="price"><sup>$</sup>42</span>
@@ -564,7 +535,7 @@
 			<hr class="mt-5 mb-5">
 
 			<div class="main_title">
-				<h2>Paris <span>Top</span> Hotels</h2>
+				<h2>인기 <span>추천</span> 숙소</h2>
 				<p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
 			</div>
 
@@ -714,52 +685,11 @@
 		</div>
 		<!-- End container -->
 
-		<div class="white_bg">
-			<div class="container margin_60">
-				<div class="main_title">
-					<h2>Plan <span>Your Tour</span> Easly</h2>
-					<p>
-						Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
-					</p>
-				</div>
-				<div class="row feature_home_2">
-                    <div class="col-md-4 text-center">
-                        <img src="img/adventure_icon_1.svg" alt="" width="75" height="75">
-                        <h3>Itineraries studied in detail</h3>
-                        <p>Suscipit invenire petentium per in. Ne magna assueverit vel. Vix movet perfecto facilisis in, ius ad maiorum corrumpit, his esse docendi in.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-                        <h3>Room and food included</h3>
-                        <p> Cum accusam voluptatibus at, et eum fuisset sententiae. Postulant tractatos ius an, in vis fabulas percipitur, est audiam phaedrum electram ex.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="img/adventure_icon_3.svg" alt="" width="75" height="75">
-                        <h3>Everything organized</h3>
-                        <p>Integre vivendo percipitur eam in, graece suavitate cu vel. Per inani persius accumsan no. An case duis option est, pro ad fastidii contentiones.</p>
-                    </div>
-                </div>
-
-                <div class="banner_2">
-                    <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
-                        <div>
-                            <h3>Your Perfect<br>Tour Experience</h3>
-                            <p>Activities and accommodations</p>
-                            <a href="all_tours_list.html" class="btn_1">Read more</a>
-                        </div>
-                    </div>
-                    <!-- /wrapper -->
-                </div>
-                <!-- /banner_2 -->
-
-			</div>
-			<!-- End container -->
-		</div>
-		<!-- End white_bg -->
+		
 
         <div class="container margin_60">
             <div class="main_title">
-                <h2>Lates <span>Blog</span> News</h2>
+                <h2> <span>블로그</span> 게시판</h2>
                 <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
             </div>
 
@@ -909,35 +839,35 @@
 	<!-- Sign In Popup -->
 	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
 		<div class="small-dialog-header">
-			<h3>Sign In</h3>
+			<h3>로그인</h3>
 		</div>
-		<form>
+		<form >
 			<div class="sign-in-wrapper">
-				<a href="#0" class="social_bt facebook">Login with Facebook</a>
-				<a href="#0" class="social_bt google">Login with Google</a>
+				<a href="#0" class="social_bt facebook">Facebook 로그인</a>
+				<a href="#0" class="social_bt google">Google 로그인</a>
 				<div class="divider"><span>Or</span></div>
 				<div class="form-group">
-					<label>Email</label>
-					<input type="email" class="form-control" name="email" id="email">
+					<label>아이디</label>
+					<input type="text" class="form-control" name="text" id="text" placeholder="아이디">
 					<i class="icon_mail_alt"></i>
 				</div>
 				<div class="form-group">
-					<label>Password</label>
-					<input type="password" class="form-control" name="password" id="password" value="">
+					<label>비밀번호</label>
+					<input type="password" class="form-control" name="password" id="password" value="" placeholder="비밀번호">
 					<i class="icon_lock_alt"></i>
 				</div>
 				<div class="clearfix add_bottom_15">
 					<div class="checkboxes float-start">
-						<label class="container_check">Remember me
+						<label class="container_check">비밀번호 저장
                           <input type="checkbox">
                           <span class="checkmark"></span>
                         </label>
 					</div>
-					<div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+					<div class="float-end"><a id="forgot" href="javascript:void(0);">비밀번호 찾기</a></div>
 				</div>
 				<div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
 				<div class="text-center">
-					Don’t have an account? <a href="javascript:void(0);">Sign up</a>
+					계정이 없습니까? <a href="register.html">회원가입</a>
 				</div>
 				<div id="forgot_pw">
 					<div class="form-group">
@@ -958,6 +888,39 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/common_scripts_min.js"></script>
     <script src="js/functions.js"></script>
+
+    <script>
+        $(function() {
+          $('input.date-pick').daterangepicker({
+              autoUpdateInput: true,
+              singleDatePicker: true,
+              autoApply: true,
+              minDate:new Date(),
+              showCustomRangeLabel: false,
+              locale: {
+                format: 'MM-DD-YYYY'
+              }
+              }, function(start, end, label) {
+              console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('DD-MM-YYYY') + ' (predefined range: ' + label + ')');
+            });
+        });
+        </script>
+        <script>
+            $('input.time-pick').timepicker({
+                minuteStep: 15,
+                showInpunts: false
+            })
+        </script>
+        
+        <script src="js/jquery.ddslick.js"></script>
+        <script>
+            $("select.ddslick").each(function() {
+                $(this).ddslick({
+                    showSelectedHTML: true
+                });
+            });
+        </script>
+
 	
 	<!-- NOTIFY BUBBLES  -->
 	<script src="js/notify_func.js"></script>

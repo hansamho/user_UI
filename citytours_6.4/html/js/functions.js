@@ -207,12 +207,13 @@ $(function () {
 		hide_min_max: true,
 		keyboard: true,
 		min: 0,
-		max: 150,
-		from: 30,
-		to: 100,
+		max: 300000,
+		from: 0,
+		to: 30000,
 		type: 'double',
-		step: 1,
-		prefix: "$",
+		step: 30000,
+		prefix: "",
+		postfix: "원",
 		grid: true
 	});
 

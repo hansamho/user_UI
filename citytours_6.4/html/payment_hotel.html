@@ -364,7 +364,7 @@
 					<div class="form_title">
 						<h3><strong>1</strong>예약자 정보</h3>
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
+							
 						</p>
 					</div>
 					<div class="step">
@@ -388,10 +388,15 @@
 									<label>전화번호</label>
 									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" placeholder="010-1234-5678"> 
 								</div>
-							</div>
-							<div class="col-4 gy-4">
-								<button type="submit" id="Authentication" class="btn btn-secondary">인증번호 전송</button>
-							</div>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>생년월일</label>
+									<input type="text" id="birthday_booking" name="birthday_booking" class="form-control" placeholder="19970923"> 
+								</div>
+							</div>							
 						</div>
 					</div>
 					<!--End step -->
@@ -399,13 +404,16 @@
 					<div class="form_title">
 						<h3><strong>2</strong>결제 정보</h3>
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
+							
 						</p>
 					</div>
 					<div class="step">
 						<div class="form-group">
-							<label>Name on card</label>
-							<input type="text" class="form-control" id="name_card_bookign" name="name_card_bookign">
+							<p>결제수단</p>
+							<button type="button" class="btn btn-secondary">신용/체크 결제</button>
+							<button type="button" class="btn btn-secondary">휴대폰 결제</button>
+							<button type="button" class="btn btn-secondary">카카오페이</button>
+
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-12">
@@ -467,7 +475,7 @@
 		
 
 					<div id="policy">
-						<h4>Cancellation policy</h4>
+						<h4>결제</h4>
 						<div class="form-group">
                             <label class="container_check">
                                 결제에 동의 하시겠습니까?

@@ -51,12 +51,13 @@
 		<div id="top_line">
             <div class="container">
                 <div class="row">
-                    <div class="col-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
+                    <div class="col-6"><i class="icon-phone"></i><strong>1234-5678</strong></div>
                     <div class="col-6">
                         <ul id="top_links">
-                            <li><a href="#sign-in-dialog" id="access_link">Sign in</a></li>
-                            <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                            <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
+							<li><a href="#sign-in-dialog" id="access_link">로그인</a></li>
+                            <li><a href="register.html" id="register">회원가입</a></li>
+                            <li><a href="admin.html" id="admin_link">마이페이지</a></li>
+                            
                         </ul>
                     </div>
                 </div><!-- End row -->
@@ -321,11 +322,11 @@
 		<div id="position">
 			<div class="container">
 				<ul>
-					<li><a href="#">Home</a>
+					<li><a href="#">홈</a>
 					</li>
-					<li><a href="#">Category</a>
+					<li><a href="#">호텔</a>
 					</li>
-					<li>Page active</li>
+					<li>호텔 리스트</li>
 				</ul>
 			</div>
 		</div>
@@ -341,7 +342,7 @@
 			<div class="row">
 				<aside class="col-lg-3">
 					<p>
-						<a class="btn_map" data-bs-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
+						<a class="btn_map" data-bs-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">위치</a>
 					</p>
 
 					<div id="filters_col">
@@ -427,7 +428,7 @@
 								<ul>
                                     <li>
                                         <label class="container_check">
-                                             욕실용품
+                                             TV
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </label>
@@ -441,40 +442,7 @@
                                     </li>
                                     <li>
                                         <label class="container_check">
-                                             스파
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="container_check">
-                                             에어컨
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="container_check">
                                              수영장
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="container_check">
-                                             객실 샤워실
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </li>
-								</ul>
-							</div>
-							<div class="filter_type">
-								<h6>기타 시설</h6>
-								<ul>
-                                    <li>
-                                        <label class="container_check">
-                                             무료 주차
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </label>
@@ -488,21 +456,54 @@
                                     </li>
                                     <li>
                                         <label class="container_check">
-                                             객실 내 흡연
+                                             욕조
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="container_check">
-                                             개인사물함
+                                             에어컨
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+								</ul>
+							</div>
+							<div class="filter_type">
+								<h6>지역</h6>
+								<ul>
+                                    <li>
+                                        <label class="container_check">
+                                             제주도
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="container_check">
-                                             반려견 동반
+                                             서울
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container_check">
+                                             부산
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container_check">
+                                             강릉
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="container_check">
+                                             인천
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </label>
@@ -528,14 +529,14 @@
 							<div class="col-md-3 col-sm-4">
 								<div class="styled-select-filters">
 									<select name="sort_price" id="sort_price">
-										<option value="" selected>Sort by price</option>
-										<option value="lower">Lowest price</option>
-										<option value="higher">Highest price</option>
+										<option value="" selected>가격분류</option>
+										<option value="lower">낮은 가격</option>
+										<option value="higher">높은 가격</option>
 									</select>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-4 d-none d-sm-block text-end">
-								<a href="#" class="bt_filters"><i class="icon-th"></i></a> <a href="all_hotels_list.html" class="bt_filters"><i class=" icon-list"></i></a>
+								<a href="all_hotels_list.html" class="bt_filters"><i class=" icon-list"></i></a>
 							</div>
 						</div>
 					</div>
@@ -557,12 +558,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="tour_list_desc">
-									<div class="score">Superb<span>9.0</span>
+									<div class="score">평점<span>4.0</span>
 									</div>
 									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i>
 									</div>
-									<h3><strong>Park Hyatt</strong> Hotel</h3>
-									<p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...</p>
+									<h3><strong>신라</strong> 호텔</h3>
+									<p>이 호텔에 대한 설명</p>
 									<ul class="add_info">
 										<li>
 											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="무료 와이파이"><i class="icon_set_1_icon-86"></i></a>
@@ -575,14 +576,14 @@
 										</li>
 										
 										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="식당"><i class="icon_set_1_icon-58"></i></a>
+											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="조식"><i class="icon_set_1_icon-58"></i></a>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup>89*<span class="normal_price_list">$99</span><small>*From/Per night</small>
+									<div><sup>245,000원</sup><span class="normal_price_list"></span><small></small>
 										<p><a href="single_hotel.html" class="btn_1">상세정보</a>
 										</p>
 									</div>
@@ -608,12 +609,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="tour_list_desc">
-									<div class="score">Superb<span>9.0</span>
+									<div class="score">평점<span>4.3</span>
 									</div>
 									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i>
 									</div>
-									<h3><strong>Mariott</strong> Hotel</h3>
-									<p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...</p>
+									<h3><strong>Mariott</strong> 호텔</h3>
+									<p>이 호텔에 대한 설명</p>
 									<ul class="add_info">
 										<li>
 											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="무료 와이파이"><i class="icon_set_1_icon-86"></i></a>
@@ -633,7 +634,7 @@
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup>39*<span class="normal_price_list">$99</span><small>*From/Per night</small>
+									<div><sup>56,000원</sup><span class="normal_price_list"></span><small></small>
 										<p><a href="single_hotel.html" class="btn_1">상세정보</a>
 										</p>
 									</div>
@@ -659,12 +660,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="tour_list_desc">
-									<div class="score">Superb<span>9.0</span>
+									<div class="score">평점<span>4.8</span>
 									</div>
 									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i>
 									</div>
-									<h3><strong>Lumiere</strong> Hotel</h3>
-									<p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...</p>
+									<h3><strong>Lumiere</strong> 호텔</h3>
+									<p>이 호텔에 대한 설명</p>
 									<ul class="add_info">
 										<li>
 											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="무료 와이파이"><i class="icon_set_1_icon-86"></i></a>
@@ -684,7 +685,7 @@
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup>129*<span class="normal_price_list">$99</span><small>*From/Per night</small>
+									<div><sup>75,000원</sup><span class="normal_price_list"></span><small></small>
 										<p><a href="single_hotel.html" class="btn_1">상세정보</a>
 										</p>
 									</div>
@@ -710,12 +711,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="tour_list_desc">
-									<div class="score">Good<span>7.5</span>
+									<div class="score">평점<span>3.0</span>
 									</div>
 									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i>
 									</div>
-									<h3><strong>Concorde</strong> Hotel</h3>
-									<p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...</p>
+									<h3><strong>Concorde</strong> 호텔</h3>
+									<p>이 호텔에 대한 설명</p>
 									<ul class="add_info">
 										<li>
 											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="무료 와이파이"><i class="icon_set_1_icon-86"></i></a>
@@ -735,7 +736,7 @@
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup>119*<span class="normal_price_list">$99</span><small>*From/Per night</small>
+									<div><sup>63,000원</sup><span class="normal_price_list"></span><small></small>
 										<p><a href="single_hotel.html" class="btn_1">상세정보</a>
 										</p>
 									</div>
@@ -761,12 +762,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="tour_list_desc">
-									<div class="score">Very Good<span>8.0</span>
+									<div class="score">평점<span>4.7</span>
 									</div>
 									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i>
 									</div>
-									<h3><strong>Concorde</strong> Hotel</h3>
-									<p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...</p>
+									<h3><strong>Concorde</strong> 호텔</h3>
+									<p>이 호텔에 대한 설명</p>
 									<ul class="add_info">
 										<li>
 											<a href="javascript:void(0);" class="tooltip-1" data-bs-placement="top" title="무료 와이파이"><i class="icon_set_1_icon-86"></i></a>
@@ -786,7 +787,7 @@
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup>129*<span class="normal_price_list">$99</span><small>*From/Per night</small>
+									<div><sup>59,000원</sup><span class="normal_price_list"></span><small></small>
 										<p><a href="single_hotel.html" class="btn_1">상세정보</a>
 										</p>
 									</div>

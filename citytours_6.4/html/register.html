@@ -326,16 +326,14 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <p>
-                                        <span>성별</span>
-                                    </p>
+                                    <label>성별</label>
+									<select class="form-select" name="gender" id="gender">
+										<option value="">성별 선택</option>
+										<option value="남자">남자</option>
+										<option value="여자">여자</option>
+									</select>
                                 </div>
-                                <div class="col" align="right">
-                                    <label for="male">남성</label>
-                                        <input id="male" type="radio"  value="남성" name="ss">
-                                    <label for="female">여성</label>
-                                        <input id="female" type="radio" value="여성" name="ss">
-                                </div>
+                                
                             </div>                                
                                 <div class="form-group">
                                 	<label>생년월일</label>
@@ -355,7 +353,7 @@
                                 </div>
                                
                                 <div id="pass-info" class="clearfix"></div>
-                                <button class="btn_full">Create an account</button>
+                                <button class="btn_full">회원가입</button>
                             </form>
                         </div>
                 </div>

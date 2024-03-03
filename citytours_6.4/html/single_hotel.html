@@ -25,6 +25,9 @@
 	
 	<!-- CUSTOM CSS -->
 	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- 리뷰 평점-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	
 </head>
 
@@ -55,7 +58,7 @@
 							<li><a href="#sign-in-dialog" id="access_link">로그인</a></li>
                             <li><a href="register.html" id="register">회원가입</a></li>
                             <li><a href="admin.html" id="admin_link">마이페이지</a></li>
-                            
+                            <li><a href="wishlist.html" id="wishlist_link">찜</a></li>
                         </ul>
                     </div>
                 </div><!-- End row -->
@@ -842,10 +845,10 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<select class="form-select" name="room_type_review" id="room_type_review">
-										<option value="">Select room type</option>
-										<option value="Single room">Single Room</option>
-										<option value="Double Room">Double Room</option>
-										<option value="King double room">King Double Room</option>
+										<option value="">객실유형</option>
+										<option value="Single room">싱글 룸</option>
+										<option value="Double Room">더블 룸</option>
+										
 									</select>
 								</div>
 							</div>
@@ -856,28 +859,28 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>청결</label>
-									<select class="form-select" name="cleanliness_review" id="cleanliness_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
+									<select class="form-select" name="quality_review" id="quality_review">
+										<option value="">리뷰 평점</option>
+										<option value="5">5</option>
+										<option value="4">4</option>
+										<option value="3">3</option>
+										<option value="2">2</option>
+										<option value="1">1</option>
+										<option value="0">0</option>
 									</select>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>편안함</label>
-									<select class="form-select" name="comfort_review" id="comfort_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
+									<select class="form-select" name="quality_review" id="quality_review">
+										<option value="">리뷰 평점</option>
+										<option value="5">5</option>
+										<option value="4">4</option>
+										<option value="3">3</option>
+										<option value="2">2</option>
+										<option value="1">1</option>
+										<option value="0">0</option>
 									</select>
 								</div>
 							</div>
@@ -887,14 +890,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>가격</label>
-									<select class="form-select" name="price_review" id="price_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
+									<select class="form-select" name="quality_review" id="quality_review">
+										<option value="">리뷰 평점</option>
+										<option value="5">5</option>
+										<option value="4">4</option>
+										<option value="3">3</option>
+										<option value="2">2</option>
+										<option value="1">1</option>
+										<option value="0">0</option>
 									</select>
 								</div>
 							</div>
@@ -902,13 +905,13 @@
 								<div class="form-group">
 									<label>퀄리티</label>
 									<select class="form-select" name="quality_review" id="quality_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
+										<option value="">리뷰 평점</option>
+										<option value="5">5</option>
+										<option value="4">4</option>
+										<option value="3">3</option>
+										<option value="2">2</option>
+										<option value="1">1</option>
+										<option value="0">0</option>
 									</select>
 								</div>
 							</div>
@@ -918,7 +921,7 @@
 							<textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="내용작성"></textarea>
 						</div>
 						
-						<input type="submit" value="Submit" class="btn_1" id="submit-review">
+						<input type="submit" value="작성" class="btn_1" id="submit-review">
 
 					</form>
 				</div>
@@ -1000,6 +1003,7 @@
 		}
 	});
 	</script>
+
 
 	<!--Review modal validation -->
 	<script src="assets/validate.js"></script>

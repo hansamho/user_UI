@@ -363,8 +363,9 @@
 								</div>
 								<div class="col-lg-2 col-md-3">
 									<ul class="info_booking">
-										<li><strong>사용자ID</strong> 23442</li>
-										<li><strong>예약날짜</strong> Sat. 23 Dec. 2015</li>
+										
+										<li><strong>예약날짜</strong> 2024-03-01~2024-03-03</li>
+										<li><strong>결제 가격</strong> 60,000원</li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-2">
@@ -391,14 +392,16 @@
 								</div>
 								<div class="col-lg-2 col-md-3">
 									<ul class="info_booking">
-										<li><strong>사용자ID</strong> 23442</li>
-										<li><strong>예약날짜</strong> Sat. 23 Dec. 2015</li>
+										
+										<li><strong>예약날짜</strong> 2024-03-01~2024-03-03</li>
+										<li><strong>결제 가격</strong> 60,000원</li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-2">
 									<div class="booking_buttons">
 										<a href="#0" class="btn_2">상세정보</a>
 										<a href="#0" class="btn_3">예약취소</a>
+										
 									</div>
 								</div>
 							</div>
@@ -419,8 +422,9 @@
 								</div>
 								<div class="col-lg-2 col-md-3">
 									<ul class="info_booking">
-										<li><strong>사용자ID</strong> 23442</li>
-										<li><strong>예약날짜</strong> Sat. 23 Dec. 2015</li>
+										
+										<li><strong>예약날짜</strong> 2024-03-01~2024-03-03</li>
+										<li><strong>결제 가격</strong> 60,000원</li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-2">
@@ -447,8 +451,9 @@
 								</div>
 								<div class="col-lg-2 col-md-3">
 									<ul class="info_booking">
-										<li><strong>사용자ID</strong> 23442</li>
-										<li><strong>예약날짜</strong> Sat. 23 Dec. 2015</li>
+										
+										<li><strong>예약날짜</strong> 2024-03-01~2024-03-03</li>
+										<li><strong>결제 가격</strong> 60,000원</li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-2">
@@ -669,7 +674,7 @@
 									<label>변경 비밀번호 확인</label>
 									<input class="form-control" name="confirm_new_password" id="confirm_new_password" type="password">
 								</div>
-								<button type="submit" class="btn_1 green">Update Password</button>
+								<button type="submit" class="btn_1 green">비밀번호 변경</button>
 							</div>
 							
 						</div>
@@ -683,35 +688,7 @@
 					<!-- End section 3 -->
 
 					<section id="section-4">
-						<div class="row">
-							<div class="col-md-6">
-								<h4>프로필</h4>
-								<ul id="profile_summary">
-									
-									<li>성 <span>Clara</span>
-									</li>
-									<li>이름 <span>Tomson</span>
-									</li>
-									<li>전화번호 <span>+00 032 42366</span>
-									</li>
-									<li>생년월일 <span>13/04/1975</span>
-									</li>
-									<li>도로명<span>24 Rue de Rivoli</span>
-									</li>
-									<li>상세정보<span>000호</span>
-									</li>
-									<li>우편번호<span>00000</span>
-									</li>
-									<li>국가 <span>France</span>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-6">
-								<p>
-								<img src="img/tourist_guide_pic.jpg" alt="Image" class="img-fluid styled profile_pic">
-								</p>
-							</div>
-						</div>
+						
 						<!-- End row -->
 
 						<div class="divider"></div>
@@ -739,14 +716,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>전화번호</label>
-									<input class="form-control" name="email_2" id="email_2" type="text">
+									<input class="form-control" name="phone" id="phone" type="text">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>생년월일 <small>(YYYY/MM/DD)</small>
 									</label>
-									<input class="form-control" name="email" id="email" type="text">
+									<input class="form-control" name="birthday" id="birthday" type="text">
 								</div>
 							</div>
 						</div>
@@ -759,14 +736,8 @@
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>도로명</label>
-									<input class="form-control" name="first_name" id="first_name" type="text">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>상세정보</label>
-									<input class="form-control" name="last_name" id="last_name" type="text">
+									<label>우편번호</label>
+									<input class="form-control" name="codeNumber" id="codeNumber" type="text">
 								</div>
 							</div>
 						</div>
@@ -775,51 +746,31 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>우편번호</label>
-									<input class="form-control" name="email" id="email" type="text">
+									<label>도로명</label>
+									<input class="form-control" name="roadName" id="roadName" type="text">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>국가</label>
-									<select id="country" class="form-select" name="country">
-										<option value="">Select...</option>
-									</select>
+									<label>지번주소</label>
+									<input class="form-control" name="address" id="address" type="text">
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>상세정보</label>
+									<input class="form-control" name="details" id="details" type="text">
 								</div>
 							</div>
 						</div>
 						<!-- End row -->
 
-						<hr>
-						<h4>프로필 이미지</h4>
-						<div class="form-inline upload_1">
-							<div class="form-group">
-								<input type="file" name="files[]" id="js-upload-files" multiple>
-							</div>
-							<button type="submit" class="btn_1 green" id="js-upload-submit">파일 업로드</button>
-						</div>
-							<!-- Drop Zone -->
-							<h5>Or drag and drop files below</h5>
-							<div class="upload-drop-zone" id="drop-zone">
-								Just drag and drop files here
-							</div>
-							<!-- Progress Bar -->
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-									<span class="sr-only">60% Complete</span>
-								</div>
-							</div>
-							<!-- Upload Finished -->
-							<div class="js-upload-finished">
-								<h5>Processed files</h5>
-								<div class="list-group">
-									<a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
-								</div>
-							</div>
-							<!-- End Hidden on mobiles -->
-
-							<hr>
-							<button type="submit" class="btn_1 green">프로필 사진 수정</button>
+						
+						
+							<button type="submit" class="btn_1 green">프로필 수정</button>
 					</section>
 					<!-- End section 4 -->
 

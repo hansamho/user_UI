@@ -55,7 +55,7 @@
                             <li><a href="#sign-in-dialog" id="access_link">로그인</a></li>
                             <li><a href="register.html" id="register">회원가입</a></li>
                             <li><a href="admin.html" id="admin_link">마이페이지</a></li>
-                            <li><a href="wishlist.html" id="wishlist_link">찜</a></li>
+                            
                             
                         </ul>
                     </div>
@@ -344,7 +344,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>숙소 이름</label>
-                                    <input type="text" class="form-control" id="hotel_name" name="hotel_name" placeholder="Optionally type hotel name">
+                                    <input type="text" class="form-control" id="hotel_name" name="hotel_name" placeholder="숙소 이름">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -352,9 +352,12 @@
                                     <label>지역</label>
                                     <div class="styled-select-common">
                                         <select name="area">
-                                            <option value="Centre" selected>Centre</option>
-                                            <option value="Gar du Nord Station">Gar du Nord Station</option>
-                                            <option value="La Defance">La Defance</option>
+                                            <option value="지역선택" selected>지역선택</option>
+                                            <option value="서울">서울</option>
+                                            <option value="부산">부산</option>
+                                            <option value="제주도">제주도</option>
+                                            <option value="강릉">강릉</option>
+                                            <option value="인천">인천</option>
                                         </select>
                                     </div>
                                 </div>
@@ -754,13 +757,13 @@
               minDate:new Date(),
               showCustomRangeLabel: false,
               locale: {
-                format: 'MM-DD-YYYY'
+                format: 'YYYY-MM-DD'
               }
               }, function(start, end, label) {
               console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('DD-MM-YYYY') + ' (predefined range: ' + label + ')');
             });
         });
-        </script>
+    </script>
         <script>
             $('input.time-pick').timepicker({
                 minuteStep: 15,

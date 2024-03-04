@@ -353,6 +353,7 @@
 				<div class="col-lg-8" id="single_tour_desc">
 					<div id="single_tour_feat">
 						<ul>
+							
 							<li><i class="icon_set_2_icon-116"></i>TV</li>
 							<li><i class="icon_set_1_icon-86"></i>와이파이</li>
 							<li><i class="icon_set_2_icon-110"></i>수영장</li>
@@ -456,10 +457,11 @@
 						<div class="col-lg-9">
 							<h4>싱글 룸</h4>
 							<p>
-								싱글베드 2개
+								싱글 베드 2개
 							</p>
 
 							<div class="row">
+								<p>객실 내 시설</p>
 								<div class="col-md-6">
 									<ul class="list_icons">
 										<li><i class="icon_set_1_icon-86"></i> 와이파이</li>
@@ -505,6 +507,7 @@
 							</p>
 
 							<div class="row">
+								<p>객실 내 시설</p>
 								<div class="col-md-6">
 									<ul class="list_icons">
 										<li><i class="icon_set_1_icon-86"></i> 와이파이</li>
@@ -641,7 +644,13 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<label><i class="icon-calendar-7"></i> 체크인 / 체크아웃</label>
+									<label><i class="icon-calendar-7"></i> 체크인</label>
+									<input class="date-pick form-control" type="text" placeholder="Select dates">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label><i class="icon-calendar-7"></i> 체크아웃</label>
 									<input class="date-pick form-control" type="text" placeholder="Select dates">
 								</div>
 							</div>
@@ -957,24 +966,21 @@
 	</script>
 
     <!-- DATEPICKER  -->
-    <script>
-    $(function() {
-      'use strict';
-      $('input.date-pick').daterangepicker({
-          autoUpdateInput: false,
-          opens: 'left',
-          minDate:new Date(),
-          locale: {
-              cancelLabel: 'Clear'
-          }
-      });
-      $('input.date-pick').on('apply.daterangepicker', function(ev, picker) {
-          $(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
-      });
-      $('input.date-pick').on('cancel.daterangepicker', function(ev, picker) {
-          $(this).val('');
-      });
-    });
+	<script>
+        $(function() {
+          $('input.date-pick').daterangepicker({
+              autoUpdateInput: true,
+              singleDatePicker: true,
+              autoApply: true,
+              minDate:new Date(),
+              showCustomRangeLabel: false,
+              locale: {
+                format: 'YYYY-MM-DD'
+              }
+              }, function(start, end, label) {
+              console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('DD-MM-YYYY') + ' (predefined range: ' + label + ')');
+            });
+        });
     </script>
 	
 	<!-- Map -->

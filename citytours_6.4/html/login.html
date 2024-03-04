@@ -319,6 +319,7 @@
                                 <div class="form-group">
                                     <label for="validationID" class="form-label">아이디</label>
                                     <input type="text" class=" form-control " id="validationID" placeholder="아이디" required>
+                                    
                                     <div class="invalid-feedback">
                                         아이디를 입력하세요
                                     </div>
@@ -327,11 +328,20 @@
                                     <label>비밀번호</label>
                                     <input type="password" class=" form-control" placeholder="비밀번호">
                                 </div>
-                                <p class="small">
-                                    <a href="#">비밀번호 찾기</a>
-                                </p>
+                                <div class="clearfix add_bottom_15">
+                                    <div class="checkboxes float-start">
+                                        <label class="container_check">비밀번호 저장
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="float-end"><a id="forgot" href="javascript:void(0);">비밀번호 찾기</a></div>
+                                </div>
                                 <a href="index.html" class="btn_full">로그인</a>
-                                <a href="register.html " class="btn_full_outline">회원가입</a>
+                                <div class="text-center">
+                                    계정이 없습니까? <a href="register.html">회원가입</a>
+                                </div>
+                                
                             </form>
                         </div>
                 </div>
